@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webstream</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-gap: 20px;
+            align-items: stretch;
+        }
+        .grid>article{
+            border: 1px solid #ccc;
+        }
+        .grid .text {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <div class="container">
+        <main id="cards" class="grid"></main>
+    </div>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
